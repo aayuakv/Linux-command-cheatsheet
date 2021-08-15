@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/css/master.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap" -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>Linux Basic Commands</title>
+</head>
+
+<body>
+  <div class="heading">
+
+      <div class="center">
+          Basic Linux Commands
+      </div>
+  </div>
+    <div class="white-section">
+
+        <ol>
+            <li><b>pwd Command:</b> This is used to display the location of the current working directory.
+              <pre class="language-shell"><code>pwd</code></pre>
+            </li>
+            <li><b>mkdir Command:</b> This is used to create a new directory under any directory.
+                <pre class="language-shell"><code>mkdir &lt;directory name&gt; </code></pre>
+            </li>
+            <li><b>rmdir Command:</b> This is used to delete a directory.
+                <pre class="language-shell"><code>rmdir &lt;directory name&gt;  </code></pre>
+            </li>
+            <li><b>ls Command:</b> This is used to display a list of content of a directory.
+                <pre class="language-shell"><code>ls</code></pre>
+            </li>
+            <li><b>ls Command:</b> This is used to display a list of content of a directory with secret files.
+                <pre class="language-shell"><code>ls -a</code></pre>
+            </li>
+            <li><b>cd Command:</b> This is used to change the current directory.
+                <pre class="language-shell"><code>cd &lt;directory path&gt; </code></pre>
+            </li>
+            <li><b>cd Command:</b> This is used to go back to the previous directory.
+                <pre class="language-shell"><code>cd ..</code></pre>
+            </li>
+            <li><b>touch Command:</b> This is used to create empty files. We can create multiple empty files by executing it once.
+                <pre class="language-shell"><code>touch &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>cat Command:</b> This is a multi-purpose utility in the Linux system. It can be used to create a file, display content of the file, copy the content of one file to another file, and more.
+                <pre class="language-shell"><code>cat &lt;file name&gt;
+            // Enter file content  </code></pre>
+            </li>
+            <li><b>rm Command:</b> This is used to remove a file.
+                <pre class="language-shell"><code>rm &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>cp Command:</b> This is used to copy a file or directory.
+                <pre class="language-shell"><code>cp &lt;existing file name&gt; &lt;new file name&gt; </code></pre>
+            </li>
+            <li><b>mv Command:</b> This is used to move a file or a directory form one location to another location.
+                <pre class="language-shell"><code>mv &lt;file name&gt; &lt;directory path&gt; </code></pre>
+            </li>
+            <li><b>rename Command:</b> This is used to rename files. It is useful for renaming a large group of files.
+                <pre class="language-shell"><code>rename 's/old-name/new-name/' files  </code></pre>
+            </li>
+            <li><b>head Command:</b> This is used to display the content of a file. It displays the first 10 lines of a file.
+                <pre class="language-shell"><code>head &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>tail Command:</b> This is similar to the head command. The difference between both commands is that it displays the last ten lines of the file content. It is useful for reading the error message.
+                <pre class="language-shell"><code>tail &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>tac Command:</b> This is the reverse of cat command, as its name specified. It displays the file content in reverse order (from the last line).
+                <pre class="language-shell"><code>tac &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>more command:</b> The more command is quite similar to the cat command, as it is used to display the file content in the same way that the cat command does.
+                <pre class="language-shell"><code>more &lt;file name&gt;  </code></pre>
+            </li>
+            <li><b>less Command:</b> is similar to the more command. It also includes some extra features such as 'adjustment in width and height of the terminal.'
+                <pre class="language-shell"><code>less &lt;file name&gt; </code></pre>
+            </li>
+            <li><b>su Command:</b> The su command provides administrative access to another user. In other words, it allows access of the Linux shell to another user.
+                <pre class="language-shell"><code>su &lt;user name&gt;</code></pre>
+            </li>
+            <li><b>id Command:</b> This is used to display the user ID (UID) and group ID (GID).
+                <pre class="language-shell"><code>id</code></pre>
+            </li>
+            <li><b>useradd Command:</b> This is used to add or remove a user on a Linux server.
+                <pre class="language-shell"><code>sudo useradd &lt;username&gt;</code></pre>
+            </li>
+            <li><b>passwd Command:</b> This is used to create and change the password for a user.
+                <pre class="language-shell"><code>sudo passwd &lt;username&gt;</code></pre>
+            </li>
+            <li><b>groupadd Command:</b> This is used to create a user group.
+                <pre class="language-shell"><code>sudo groupadd &lt;group name&gt;</code></pre>
+            </li>
+            <li><b>cut Command:</b> The cut command is used to select a specific column of a file. The '-d' option is used as a delimiter, and it can be a space (' '), a slash (/), a hyphen (-), or anything else. And, the '-f' option is used to specify a column number.
+                <pre class="language-shell"><code>cut -d(delimiter) -f(columnNumber) &lt;fileName&gt;  </code></pre>
+            </li>
+            <li><b>comm command:</b> The 'comm' command is used to compare two files or streams. By default, it displays three columns, first displays non-matching items of the first file, second indicates the non-matching item of the second file, and the third column displays the matching items of both files.
+                <pre class="language-shell"><code>comm &lt;file1&gt; &lt;file2&gt;  </code></pre>
+            </li>
+            <li><b>wc command :</b> The wc command is used to count the lines, words, and characters in a file.
+                <pre class="language-shell"><code>wc &lt;file name&gt; </code></pre>
+            </li>
+            <li><b>od -b Command:</b> This is used to display the content of a file in Octal format .
+                <pre class="language-shell"><code>od -b &lt;fileName&gt;</code></pre>
+            </li>
+            <li><b>od -t x1 Command:</b> This is used to display the content of a file in Hexa decimal format.
+                <pre class="language-shell"><code>od -t x1 &lt;fileName&gt;</code></pre>
+            </li>
+            <li><b>od -c Command:</b> This is used to display the content of a file in ASCII character format.
+                <pre class="language-shell"><code>od -c &lt;fileName&gt;</code></pre>
+            </li>
+            <li><b>sort Command:</b> This is used to sort files in alphabetical order.
+                <pre class="language-shell"><code>sort &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>gzip Command:</b> This is used to truncate the file size. It is a compressing tool. It replaces the original file by the compressed file having '.gz' extension.
+                <pre class="language-shell"><code>gzip &lt;file1&gt; &lt;file2&gt; &lt;file3&gt;</code></pre>
+            </li>
+            <li><b>gunzip Command:</b> This is used to decompress a file. It is a reverse operation of gzip command.
+                <pre class="language-shell"><code>gunzip &lt;file1&gt; &lt;file2&gt; &lt;file3&gt;</code></pre>
+            </li>
+            <li><b>find Command:</b> This is used to find a particular file within a directory. It also supports various options to find a file such as byname, by type, by date, and more.
+                <pre class="language-shell"><code>find . -name "*.pdf"  </code></pre>
+            </li>
+            <li><b>locate command:</b> This is used to search a file by file name. It searches the file in the database, whereas the find command searches in the file system.
+                <pre class="language-shell"><code>locate &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>date Command:</b> This is used to display date, time, time zone, and more.
+                <pre class="language-shell"><code>date</code></pre>
+            </li>
+            <li><b>cal Command:</b> This is used to display the current month's calendar with the current date highlighted.
+                <pre class="language-shell"><code>cal</code></pre>
+            </li>
+            <li><b>sleep Command:</b> This is used to hold the terminal by the specified amount of time. By default, it takes time in seconds.
+                <pre class="language-shell"><code>sleep &lt;time&gt;</code></pre>
+            </li>
+            <li><b>time Command:</b> This is used to display the time to execute a command.
+                <pre class="language-shell"><code>time</code></pre>
+            </li>
+            <li><b>zcat command:</b> This is used to display the compressed files.
+                <pre class="language-shell"><code>zcat &lt;file name&gt;</code></pre>
+            </li>
+            <li><b>df command</b> This is used to display the disk space used in the file system. It displays the output as in the number of used blocks, available blocks, and the mounted directory.
+                <pre class="language-shell"><code>df</code></pre>
+            </li>
+            <li><b>mount command:</b> This is used to connect an external device file system to the system's file system..
+                <pre class="language-shell"><code>mount -t type &lt;device&gt; &lt;directory&gt;</code></pre>
+            </li>
+            <li><b>exit command:</b> This is used to exit from the current shell.
+                <pre class="language-shell"><code>exit</code></pre>
+            </li>
+            <li><b>clear command:</b> This is used to clear the terminal screen.
+                <pre class="language-shell"><code>clear</code></pre>
+            </li>
+            <li><b>ip Command:</b> It is an updated version of the ipconfig command. It is used to assign an IP address, initialize an interface, disable an interface.
+                <pre class="language-shell"><code>ip a or ip addr</code></pre>
+            </li>
+            <li><b>ping Command:</b> It is an updated version of the ipconfig command. It is used to assign an IP address, initialize an interface, disable an interface.
+                <pre class="language-shell"><code>ping &lt;destination&gt; </code></pre>
+            </li>
+            <li><b>Mail Command:</b> The mail command is used to send emails from the command line.
+                <pre class="language-shell"><code>mail -s "Subject" &lt;recipient address&gt;</code></pre>
+            </li>
+            <li><b>git init command:</b> This is used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
+                <pre class="language-shell"><code>git init</code></pre>
+            </li>
+            <li><b>git add command:</b> This git add command adds all the changes in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit
+                <pre class="language-shell"><code>git add .</code></pre>
+            </li>
+            <li><b>commit command :</b> This is used to save your changes to the local repository.
+                <pre class="language-shell"><code>git commit -m "message"</code></pre>
+            </li>
+            <li><b>--version command:</b> This is used to ckeck current version of any application.
+                <pre class="language-shell"><code>&lt;application&gt; --version</code></pre>
+            </li>
+            <li><b>heroku login command:</b> This is used to login in heroku deployment environment.
+                <pre class="language-shell"><code>heroku login</code></pre>
+            </li>
+            <li><b>heroku create command:</b> This is used to create remote repository in heroku.
+                <pre class="language-shell"><code>heroku create</code></pre>
+            </li>
+            <li><b>git remote command:</b> This is used to check current git remote repository.
+                <pre class="language-shell"><code>git remote</code></pre>
+            </li>
+            <li><b>git push command:</b> This is used to deploy and push git local repository to heroku server using remote repository.
+                <pre class="language-shell"><code>git push heroku master</code></pre>
+            </li>
+        </ol>
+    </div>
+    <!-- <video autoplay muted id="vid">
+        <source src="video.webm" type="video/webm">
+    </video> -->
+</body>
+
+</html>
